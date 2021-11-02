@@ -1,0 +1,29 @@
+footer{
+    padding: 100px;
+    background: #F18D9E;
+    border-top: groove 3px;
+    border-color: #F18D9E;
+}
+.instagram{
+    width: 40px;
+}
+.gmail{
+    width: 40px;
+}
+.facebook{
+    width: 40px;
+}
+.redesUno{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.redesUno a img{
+    width: 100px;
+    margin: 10px 140px 10px 140px;
+    overflow: hidden;
+}
+.redesUno a :hover{
+    transform:scale(0.8, 0.8);
+}

@@ -1,0 +1,40 @@
+@import "header";
+@import "main";
+@import "footer";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+form {
+    color: beige;
+}
+.genero {
+    color: black;
+}
+.formulario{
+    width: 40px;
+}
+.mainForm{
+    background: linear-gradient(to top, #F18D9E, #E6D72A);
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    
+}
+form{
+    margin: 150px 20px 0px 69px;
+    width: 100%;
+    justify-content: center;
+    border-style: solid px;
+    border: beige;
+}
+.generoForm{
+    margin-top: 60px;
+}
+.emailForm{
+    margin-top: 60px;
+}
+.footerCuestionario{
+    padding: 30px;
+}
