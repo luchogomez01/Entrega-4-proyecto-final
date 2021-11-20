@@ -1,40 +1,324 @@
+$rosa: #F18D9E;
+$amarillo: #E6D72A;
 @import "header";
 @import "main";
 @import "footer";
+@import "formulario";
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
-form {
-    color: beige;
-}
-.genero {
-    color: black;
-}
-.formulario{
-    width: 40px;
-}
-.mainForm{
-    background: linear-gradient(to top, #F18D9E, #E6D72A);
-    margin: 0px;
-    padding: 0px;
+@media only screen and (max-width: 767px){
+    .mainUno{
+    background: linear-gradient(to top,#F18D9E,#E6D72A);
     width: 100%;
-    
-}
-form{
-    margin: 150px 20px 0px 69px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "teXTo"
+    "fOTo"
+    "video"
+    ;
+    }
+    .textoUno{
+        display: grid;
+        margin: 60px, 60px, 0px, 60px ;
+        grid-area: teXTo;
+        background: linear-gradient(to bottom,#F18D9E,#E6D72A);
+        color: black;
+        text-align: justify;
+        font-size: 10px;
+        font-family: 'PT Sans', sans-serif;
+        line-height: 23px;
+        width: 350px;
+        height: 400px;
+        border: 10px beige;
+        border-radius: 2%;
+        border-style: solid;
+        overflow: auto;
+    }
+    .fotoPrincipal{
+        display: grid;
+        justify-content: start;
+        margin: 60px;
+        grid-area: fOTo;  
+        
+    }
+    .mainDos{
+        background: linear-gradient(to top,#F18D9E,#E6D72A);
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "teXTo"
+        "fOTo"
+        ;
+        }
+    .textoDos{
+        display: grid;
+        margin: 60px;
+        grid-area: teXTo;
+        background: linear-gradient(to bottom,#F18D9E,#E6D72A);
+        color: black;
+        text-align: justify;
+        font-size: 10px;
+        font-family: 'PT Sans', sans-serif;
+        line-height: 23px;
+        width: 250px;
+        height: 360px;
+        border: 10px beige;
+        border-radius: 2%;
+        border-style: solid;
+        overflow: auto;
+    }
+    .fotoSecciones{
+        display: grid;
+        justify-content: start;
+        margin: 60px;
+        grid-area: fOTo;  
+            }
+    .videoUno{
+        display: flex;
+        grid-area: video;
+        justify-content: start;
+        width: 60px;
+        padding: 5px 100px 20px 10px;
+         iframe{
+            width: 700px;
+            margin: 60px;
+         }
+    }
+
+    footer{
+    padding: 3px;
+    background: linear-gradient(to top,$rosa, $amarillo);
+    border-top: groove 3px;
+    border-color: $rosa;
+    }
+    .redesUno{
     width: 100%;
+    display: flex;
+    justify-content: start;
+    font-size: 13px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 6px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    color: $rosa;
+    text-decoration: underline;
+    margin-top: 55px;
+    border: solid;
+    padding: 5px;   
+    }
+    .redesUno a img{
+    width: 28px;
+    margin: 50px 60px 10px 60px;
+    overflow: hidden;
+    }
+    .redesUno a :hover{
+    transform:scale(0.8, 0.8);
+    }
+    .redesDos{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 70px;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    color: $amarillo;
+    text-decoration: underline;
+    border: solid;
+    }
+    .redesDos a img{
+    width: 60px;
+    margin: 50px 60px 10px 60px;
+    overflow: hidden;
+    }
+    .redesDos a :hover{
+    transform:scale(0.8, 0.8);
+    }
+    .redesForm{
+    width: 100%;
+    display: flex;
     justify-content: center;
-    border-style: solid px;
-    border: beige;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    color: $amarillo;
+    text-decoration: underline;
+
+    }
+    .redesForm a img{
+    width: 33px;
+    margin: 40px 60px 10px 40px;
+    overflow: hidden;
+    }
+    .redesForm a :hover{
+    transform:scale(0.8, 0.8);
+    }  
 }
-.generoForm{
-    margin-top: 60px;
-}
-.emailForm{
-    margin-top: 60px;
-}
-.footerCuestionario{
-    padding: 30px;
+@media only screen and (max-width: 380px){
+    .mainUno{
+    background: linear-gradient(to top,#F18D9E,#E6D72A);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "teXTo"
+    "fOTo"
+    "video"
+    ;
+    }
+    .textoUno{
+        display: grid;
+        margin: 60px;
+        grid-area: teXTo;
+        background: linear-gradient(to bottom,#F18D9E,#E6D72A);
+        color: black;
+        text-align: justify;
+        font-size: 10px;
+        font-family: 'PT Sans', sans-serif;
+        line-height: 23px;
+        width: 200px;
+        height: 310px;
+        border: 10px beige;
+        border-radius: 2%;
+        border-style: solid;
+        overflow: auto;
+    }
+    .fotoPrincipal{
+        display: grid;
+        justify-content: start;
+        margin: 60px;
+        grid-area: fOTo;
+        width: 100px; 
+        div{
+            width: 195px; 
+            div div img{
+                width: 195px; 
+            }
+        }     
+    }
+    .mainDos{
+        background: linear-gradient(to top,#F18D9E,#E6D72A);
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "teXTo"
+        "fOTo"
+        ;
+        }
+    .textoDos{
+        display: grid;
+        margin: 60px;
+        grid-area: teXTo;
+        background: linear-gradient(to bottom,#F18D9E,#E6D72A);
+        color: black;
+        text-align: justify;
+        font-size: 10px;
+        font-family: 'PT Sans', sans-serif;
+        line-height: 23px;
+        width: 200px;
+        height: 310px;
+        border: 10px beige;
+        border-radius: 2%;
+        border-style: solid;
+        overflow: auto;
+    }
+    .fotoSecciones{
+        display: grid;
+        justify-content: start;
+        margin: 40px;
+        grid-area: fOTo; 
+         img{
+            width: 200px; 
+            margin: 20px;
+         } 
+    }
+    .videoUno{
+        display: flex;
+        grid-area: video;
+        justify-content: start;
+        margin: 60px, 0px, 60px, 0px;
+        width: 60px;
+        padding: 5px 100px 20px 10px;
+        iframe{
+            width: 100px;
+            margin: 60px;
+         }
+    }
+
+    footer{
+    padding: 3px;
+    background: linear-gradient(to top,$rosa, $amarillo);
+    border-top: groove 3px;
+    border-color: $rosa;
+    }
+    .redesUno{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    font-size: 10px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 6px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    color: $rosa;
+    text-decoration: underline;
+    margin-top: 55px;
+    border: solid;
+    padding: 1px;   
+    }
+    .redesUno a img{
+    width: 13px;
+    margin: 20px 60px 10px 20px;
+    overflow: hidden;
+    }
+    .redesUno a :hover{
+    transform:scale(0.8, 0.8);
+    }
+    .redesDos{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 70px;
+    font-size: 17px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    color: $amarillo;
+    text-decoration: underline;
+    border: solid;
+    }
+    .redesDos a img{
+    width: 53px;
+    margin: 50px 60px 10px 60px;
+    overflow: hidden;
+    }
+    .redesDos a :hover{
+    transform:scale(0.8, 0.8);
+    }
+    .redesForm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    color: $amarillo;
+    text-decoration: underline;
+
+    }
+    .redesForm a img{
+    width: 33px;
+    margin: 40px 60px 10px 40px;
+    overflow: hidden;
+    }
+    .redesForm a :hover{
+    transform:scale(0.8, 0.8);
+    }  
 }

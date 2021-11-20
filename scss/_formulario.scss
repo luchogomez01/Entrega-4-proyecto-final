@@ -1,0 +1,33 @@
+form {
+    color: beige;
+}
+.genero {
+    color: black;
+}
+.formulario{
+    width: 40px;
+}
+.mainForm{
+    background: linear-gradient(to top, $rosa, $amarillo);
+    padding: 0px;
+    width: 100%;
+    
+}
+form{
+    margin: 0px;
+    width: 100%;
+    justify-content: center;
+    border-style: solid px;
+    border: beige;
+    padding: 100px;
+}
+.generoForm{
+    margin-top: 60px;
+}
+.emailForm{
+    margin-top: 60px;
+}
+.footerCuestionario{
+    background: $rosa;
+    padding: 30px;
+}

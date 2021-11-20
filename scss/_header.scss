@@ -1,5 +1,11 @@
+$rosa: #F18D9E;
+$amarillo: #E6D72A;
+*{
+    margin: 0px;
+    padding: 0px;
+}
 header{
-    background: linear-gradient(to bottom,#F18D9E,#E6D72A);
+    background: linear-gradient(to bottom, $rosa, $amarillo);
     margin: 0px;
     display: flex;
     justify-content: center;
@@ -8,8 +14,10 @@ header{
         display: flex;
         justify-content: center;
         width: 100%;
-        padding: 0%;
-        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        font-family: 'PT Sans', sans-serif;
+        line-height: 23px;
+        font-size: 26px;
         div form{
             width: 250px;
             button{
@@ -20,3 +28,6 @@ header{
         }
     }
 }
+.fotoLogo :hover{
+    transform:scale(1.1, 1.1);
+ }

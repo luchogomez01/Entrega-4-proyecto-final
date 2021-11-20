@@ -1,29 +1,72 @@
+$rosa: #F18D9E;
+$amarillo: #E6D72A;
 footer{
-    padding: 100px;
-    background: #F18D9E;
+    padding: 3px;
+    background: linear-gradient(to top,$rosa, $amarillo);
     border-top: groove 3px;
-    border-color: #F18D9E;
-}
-.instagram{
-    width: 40px;
-}
-.gmail{
-    width: 40px;
-}
-.facebook{
-    width: 40px;
+    border-color: $rosa;
 }
 .redesUno{
     width: 100%;
     display: flex;
-    justify-content: center;
-    
+    justify-content: start;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    color: $rosa;
+    text-decoration: underline;
+    margin-top: 55px;
+    border: solid;
+    padding: 35px;   
 }
 .redesUno a img{
-    width: 100px;
-    margin: 10px 140px 10px 140px;
+    width: 50px;
+    margin: 50px 60px 10px 60px;
     overflow: hidden;
 }
 .redesUno a :hover{
+    transform:scale(0.8, 0.8);
+}
+.redesDos{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 70px;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    color: $amarillo;
+    text-decoration: underline;
+    border: solid;
+
+}
+.redesDos a img{
+    width: 83px;
+    margin: 50px 60px 10px 60px;
+    overflow: hidden;
+}
+.redesDos a :hover{
+    transform:scale(0.8, 0.8);
+}
+.redesForm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    color: $amarillo;
+    text-decoration: underline;
+
+}
+.redesForm a img{
+    width: 60px;
+    margin: 50px 60px 10px 60px;
+    overflow: hidden;
+}
+.redesForm a :hover{
     transform:scale(0.8, 0.8);
 }

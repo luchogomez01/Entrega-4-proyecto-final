@@ -1,3 +1,7 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
 header {
   background: linear-gradient(to bottom, #F18D9E, #E6D72A);
   margin: 0px;
@@ -8,15 +12,20 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 0%;
-    font-family: Arial, Helvetica, sans-serif; }
+    padding: 10px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    font-size: 26px; }
     header nav div form {
       width: 250px; }
       header nav div form button {
         display: inline;
         margin: 0%; }
 
-main {
+.fotoLogo :hover {
+  transform: scale(1.1, 1.1); }
+
+.mainUno {
   background: #E6D72A;
   width: 100%;
   display: grid;
@@ -59,6 +68,32 @@ main {
   width: 300px;
   height: 500px; }
 
+.mainDos {
+  background: #E6D72A;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "teXTo fOTo"; }
+
+.textoDos {
+  display: grid;
+  margin: 60px;
+  grid-area: teXTo;
+  background: linear-gradient(to bottom, #F18D9E, #E6D72A);
+  color: black;
+  text-align: justify;
+  font-size: 18px;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 23px;
+  width: 100%;
+  height: 400px;
+  border: 10px beige;
+  border-radius: 2%;
+  border-style: solid;
+  overflow: auto; }
+  .textoDos p {
+    padding: 35px; }
+
 .fotoSecciones {
   display: grid;
   justify-content: center;
@@ -100,36 +135,72 @@ main {
     width: 900px; }
 
 footer {
-  padding: 100px;
-  background: #F18D9E;
+  padding: 3px;
+  background: linear-gradient(to top, #F18D9E, #E6D72A);
   border-top: groove 3px;
   border-color: #F18D9E; }
-
-.instagram {
-  width: 40px; }
-
-.gmail {
-  width: 40px; }
-
-.facebook {
-  width: 40px; }
 
 .redesUno {
   width: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: start;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 23px;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 23px;
+  color: #F18D9E;
+  text-decoration: underline;
+  margin-top: 55px;
+  border: solid;
+  padding: 35px; }
 
 .redesUno a img {
-  width: 100px;
-  margin: 10px 140px 10px 140px;
+  width: 50px;
+  margin: 50px 60px 10px 60px;
   overflow: hidden; }
 
 .redesUno a :hover {
   transform: scale(0.8, 0.8); }
 
-* {
-  margin: 0px;
-  padding: 0px; }
+.redesDos {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-top: 70px;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 23px;
+  color: #E6D72A;
+  text-decoration: underline;
+  border: solid; }
+
+.redesDos a img {
+  width: 83px;
+  margin: 50px 60px 10px 60px;
+  overflow: hidden; }
+
+.redesDos a :hover {
+  transform: scale(0.8, 0.8); }
+
+.redesForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 23px;
+  color: #E6D72A;
+  text-decoration: underline; }
+
+.redesForm a img {
+  width: 60px;
+  margin: 50px 60px 10px 60px;
+  overflow: hidden; }
+
+.redesForm a :hover {
+  transform: scale(0.8, 0.8); }
 
 form {
   color: beige; }
@@ -142,16 +213,16 @@ form {
 
 .mainForm {
   background: linear-gradient(to top, #F18D9E, #E6D72A);
-  margin: 0px;
   padding: 0px;
   width: 100%; }
 
 form {
-  margin: 150px 20px 0px 69px;
+  margin: 0px;
   width: 100%;
   justify-content: center;
   border-style: solid px;
-  border: beige; }
+  border: beige;
+  padding: 100px; }
 
 .generoForm {
   margin-top: 60px; }
@@ -160,4 +231,264 @@ form {
   margin-top: 60px; }
 
 .footerCuestionario {
+  background: #F18D9E;
   padding: 30px; }
+
+@media only screen and (max-width: 767px) {
+  .mainUno {
+    background: linear-gradient(to top, #F18D9E, #E6D72A);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "teXTo" "fOTo" "video"; }
+  .textoUno {
+    display: grid;
+    margin: 60px, 60px, 0px, 60px;
+    grid-area: teXTo;
+    background: linear-gradient(to bottom, #F18D9E, #E6D72A);
+    color: black;
+    text-align: justify;
+    font-size: 10px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    width: 350px;
+    height: 400px;
+    border: 10px beige;
+    border-radius: 2%;
+    border-style: solid;
+    overflow: auto; }
+  .fotoPrincipal {
+    display: grid;
+    justify-content: start;
+    margin: 60px;
+    grid-area: fOTo; }
+  .mainDos {
+    background: linear-gradient(to top, #F18D9E, #E6D72A);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "teXTo" "fOTo"; }
+  .textoDos {
+    display: grid;
+    margin: 60px;
+    grid-area: teXTo;
+    background: linear-gradient(to bottom, #F18D9E, #E6D72A);
+    color: black;
+    text-align: justify;
+    font-size: 10px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    width: 250px;
+    height: 360px;
+    border: 10px beige;
+    border-radius: 2%;
+    border-style: solid;
+    overflow: auto; }
+  .fotoSecciones {
+    display: grid;
+    justify-content: start;
+    margin: 60px;
+    grid-area: fOTo; }
+  .videoUno {
+    display: flex;
+    grid-area: video;
+    justify-content: start;
+    width: 60px;
+    padding: 5px 100px 20px 10px; }
+    .videoUno iframe {
+      width: 700px;
+      margin: 60px; }
+  footer {
+    padding: 3px;
+    background: linear-gradient(to top, #F18D9E, #E6D72A);
+    border-top: groove 3px;
+    border-color: #F18D9E; }
+  .redesUno {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    font-size: 13px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 6px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    color: #F18D9E;
+    text-decoration: underline;
+    margin-top: 55px;
+    border: solid;
+    padding: 5px; }
+  .redesUno a img {
+    width: 28px;
+    margin: 50px 60px 10px 60px;
+    overflow: hidden; }
+  .redesUno a :hover {
+    transform: scale(0.8, 0.8); }
+  .redesDos {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 70px;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    color: #E6D72A;
+    text-decoration: underline;
+    border: solid; }
+  .redesDos a img {
+    width: 60px;
+    margin: 50px 60px 10px 60px;
+    overflow: hidden; }
+  .redesDos a :hover {
+    transform: scale(0.8, 0.8); }
+  .redesForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    color: #E6D72A;
+    text-decoration: underline; }
+  .redesForm a img {
+    width: 33px;
+    margin: 40px 60px 10px 40px;
+    overflow: hidden; }
+  .redesForm a :hover {
+    transform: scale(0.8, 0.8); } }
+
+@media only screen and (max-width: 380px) {
+  .mainUno {
+    background: linear-gradient(to top, #F18D9E, #E6D72A);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "teXTo" "fOTo" "video"; }
+  .textoUno {
+    display: grid;
+    margin: 60px;
+    grid-area: teXTo;
+    background: linear-gradient(to bottom, #F18D9E, #E6D72A);
+    color: black;
+    text-align: justify;
+    font-size: 10px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    width: 200px;
+    height: 310px;
+    border: 10px beige;
+    border-radius: 2%;
+    border-style: solid;
+    overflow: auto; }
+  .fotoPrincipal {
+    display: grid;
+    justify-content: start;
+    margin: 60px;
+    grid-area: fOTo;
+    width: 100px; }
+    .fotoPrincipal div {
+      width: 195px; }
+      .fotoPrincipal div div div img {
+        width: 195px; }
+  .mainDos {
+    background: linear-gradient(to top, #F18D9E, #E6D72A);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "teXTo" "fOTo"; }
+  .textoDos {
+    display: grid;
+    margin: 60px;
+    grid-area: teXTo;
+    background: linear-gradient(to bottom, #F18D9E, #E6D72A);
+    color: black;
+    text-align: justify;
+    font-size: 10px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    width: 200px;
+    height: 310px;
+    border: 10px beige;
+    border-radius: 2%;
+    border-style: solid;
+    overflow: auto; }
+  .fotoSecciones {
+    display: grid;
+    justify-content: start;
+    margin: 40px;
+    grid-area: fOTo; }
+    .fotoSecciones img {
+      width: 200px;
+      margin: 20px; }
+  .videoUno {
+    display: flex;
+    grid-area: video;
+    justify-content: start;
+    margin: 60px, 0px, 60px, 0px;
+    width: 60px;
+    padding: 5px 100px 20px 10px; }
+    .videoUno iframe {
+      width: 100px;
+      margin: 60px; }
+  footer {
+    padding: 3px;
+    background: linear-gradient(to top, #F18D9E, #E6D72A);
+    border-top: groove 3px;
+    border-color: #F18D9E; }
+  .redesUno {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    font-size: 10px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 6px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    color: #F18D9E;
+    text-decoration: underline;
+    margin-top: 55px;
+    border: solid;
+    padding: 1px; }
+  .redesUno a img {
+    width: 13px;
+    margin: 20px 60px 10px 20px;
+    overflow: hidden; }
+  .redesUno a :hover {
+    transform: scale(0.8, 0.8); }
+  .redesDos {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 70px;
+    font-size: 17px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    color: #E6D72A;
+    text-decoration: underline;
+    border: solid; }
+  .redesDos a img {
+    width: 53px;
+    margin: 50px 60px 10px 60px;
+    overflow: hidden; }
+  .redesDos a :hover {
+    transform: scale(0.8, 0.8); }
+  .redesForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 23px;
+    color: #E6D72A;
+    text-decoration: underline; }
+  .redesForm a img {
+    width: 33px;
+    margin: 40px 60px 10px 40px;
+    overflow: hidden; }
+  .redesForm a :hover {
+    transform: scale(0.8, 0.8); } }
